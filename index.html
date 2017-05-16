@@ -13,7 +13,7 @@
   button.addEventListener('click', function () {
 
     if (count === 1) {
-      alert('‰Ÿ‚·‚È‚æIâ‘Î‰Ÿ‚·‚È‚æIII');
+      alert('æŠ¼ã™ãªã‚ˆï¼çµ¶å¯¾æŠ¼ã™ãªã‚ˆï¼ï¼ï¼');
     }
 
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -21,7 +21,7 @@
       text.innerText = text.innerText + position.coords.latitude + ', ' + position.coords.longitude + '   ';
     }, function (error) {
       if (count === 1) {
-        alert('‰Ÿ‚µ‚Ä‚à‚¤‚½‚ÅBB');
+        alert('æŠ¼ã—ã¦ã‚‚ã†ãŸã§ã€‚ã€‚');
       }
       count++;
       console.log(arguments);
