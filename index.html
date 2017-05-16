@@ -13,10 +13,10 @@
 
         navigator.geolocation.getCurrentPosition(function(position){
             console.log(arguments);
-            text.innerText = text.innerText + JSON.stringify(position);
+            text.innerText = text.innerText + position.coords.latitude + ', ' + position.coords.longitude + '   ';
         }, function(error){
             console.log(arguments);
-            text.innerText = text.innerText + JSON.stringify(error);
+            text.innerText = text.innerText + error.message + '   ';
         });
 
     });
