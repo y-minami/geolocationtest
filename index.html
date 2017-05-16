@@ -12,12 +12,13 @@
     button.addEventListener('click', function() {
 
         navigator.geolocation.getCurrentPosition(function(position){
+            console.log(arguments);
             text.innerText = text.innerText + JSON.stringify(position);
         }, function(error){
+            console.log(arguments);
             text.innerText = text.innerText + JSON.stringify(error);
         });
 
     });
-
 </script>
 </html>
