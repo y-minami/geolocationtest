@@ -7,5 +7,17 @@
 </body>
 <script>
 
+    var text = document.querySelector('#text');
+    var button = document.querySelector('#button');
+    button.addEventListener('click', function() {
+
+        navigator.geolocation.getCurrentPosition(function(position){
+            text.innerText = text.innerText + JSON.stringify(position);
+        }, function(error){
+            text.innerText = text.innerText + JSON.stringify(error);
+        });
+
+    });
+
 </script>
 </html>
